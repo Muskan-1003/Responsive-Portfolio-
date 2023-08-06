@@ -81,17 +81,17 @@ function scrollActive() {
 
 window.addEventListener('scroll', scrollActive);
 
-// function sendEmail(){
-//   Email.send({
-//     Host : "smtp.gmail.com",
-//     Username : "pandeymuskan838@gmail.com",
-//     // Password : ,
-//     To : 'muskanpandey1003@gmail.com',
-//     From : document.getElementById("email").value,
-//     Subject : "This is the subject",
-//     Body : "And this is the body"
-// }).then(
-//   message => alert(message)
-// );
+function sendEmail(){
+  Email.send({
+    Host : "smtp.gmail.com",
+    Username : "pandeymuskan838@gmail.com",
+    // Password : ,
+    To : 'muskanpandey1003@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
 
-// }
+}
